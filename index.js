@@ -5,7 +5,7 @@ var os = require('os')
 var path = require('path')
 
 var platform = os.platform()
-if (platform !== 'darwin') {
+if (platform !== 'darwin' && platform !== 'win32') {
   console.error('Unsupported platform.')
   process.exit(1)
 }
