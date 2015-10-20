@@ -5,6 +5,8 @@ Static binaries for `ffprobe`. OSX only at the moment, please send a PR if you w
 
 Based on <https://github.com/eugeneware/ffmpeg-static>.
 
+Binaries are from <http://ffmpeg.zeranoe.com/builds/>
+
 Usage
 ----
 
