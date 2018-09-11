@@ -1,7 +1,7 @@
 ffprobe-static
 ====
 
-Static binaries for `ffprobe`. OSX only at the moment, please send a PR if you would like to help with adding support for other platforms.
+Static binaries for `ffprobe`.
 
 Based on <https://github.com/eugeneware/ffmpeg-static>.
 
@@ -21,8 +21,7 @@ Version Notes
 Currently supports Mac OS X (64-bit), Linux (32 and 64-bit) and Windows
 (32 and 64-bit).
 
-Currently version `3.1` is installed for Mac and Linux, and `3.0.1` for
-Windows.
+Currently version `4.0.2` is installed for Mac, Windows and Linux.
 
 I pulled the versions from the ffmpeg static build pages linked from the
 official ffmpeg site. Namely:
