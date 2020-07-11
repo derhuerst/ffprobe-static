@@ -4,15 +4,25 @@
 var os = require('os');
 var path = require('path');
 
+// Key - supported OS platforms
+// Object - array of supported architectures
+const supported = {
+  darwin: ['x64'],
+  linux: ['arm', 'arm64', 'ia32', 'x64'],
+  win32: ['ia32', 'x64']
+}
+
 var platform = os.platform();
-if (platform !== 'darwin' && platform !=='linux' && platform !== 'win32') {
-  console.error('Unsupported platform.');
+
+if(!(platform in supported)) {
+  console.error('Unsupported platform:', platform);
   process.exit(1);
 }
 
 var arch = os.arch();
-if (platform === 'darwin' && arch !== 'x64') {
-  console.error('Unsupported architecture.');
+
+if(supported[platform].indexOf(arch) < 0) {
+  console.error('Unsupported architecture:', arch);
   process.exit(1);
 }
 
