@@ -18,10 +18,10 @@ console.log(ffprobe.path);
 Version Notes
 ----
 
-Currently supports Mac OS X (64-bit), Linux (32 and 64-bit) and Windows
+Currently supports Mac OS X (64-bit), Linux (32, 64-bit and ARM) and Windows
 (32 and 64-bit).
 
-Currently version `4.0.2` is installed for Mac, Windows and Linux.
+Currently version `4.3.1` is installed for Mac, Windows and Linux.
 
 I pulled the versions from the ffmpeg static build pages linked from the
 official ffmpeg site. Namely:
